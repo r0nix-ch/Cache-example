@@ -114,14 +114,7 @@ int main()
     a.fill_matrix();
     b.fill_matrix();
 
-    Matrix2 k(rows1, cols1);
-    Matrix2 l(rows2, cols2);
-    k.fill_with_matrix(a);
-    l.fill_with_matrix(b);
-
-    
     cout << "time mul_matrix: " << time_mul_matrix(a, b) << "s" << endl;
-    cout << "time mul_mtx: " << time_mul_mtx(k, l) << "s" << endl;
     cout << "time mul_matrix_transposed: " << time_mul_matrix_transposed(a, b) << "s" << endl;
 
 }
